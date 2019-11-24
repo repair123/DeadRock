@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\BackgroundMove.cs" />
     <Compile Include="Assets\Scripts\deadFx.cs" />
     <Compile Include="Assets\Scripts\EagleMovement.cs" />
+    <Compile Include="Assets\Scripts\OpossumMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Tilemap\Brushes\Tint Brush Smooth\Scripts\TintTextureGenerator.cs" />

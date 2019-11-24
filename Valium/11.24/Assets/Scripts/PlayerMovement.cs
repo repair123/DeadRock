@@ -15,9 +15,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float hurtForce = 50f;
     public float hurtingTime = 0.3f;
     public GameObject deadFx;
+    public float killJump = 500f;
 
     private float horizontalMove = 0f;
-    private float nowReachTime = 0f;
     private bool jump = false;
     private bool crouch = false;
     private bool dash = false;
@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
             if (jump)
             {
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
-                rb.AddForce(new Vector2(0f, 500f));
+                rb.AddForce(new Vector2(0f, killJump));
                 Instantiate(deadFx, new Vector2(transform.position.x, transform.position.y - 1.2f), Quaternion.identity);
                 Destroy(collision.gameObject);
 
@@ -132,6 +132,14 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
 
+        }
+        if(collision.gameObject.tag == "Spike")
+        {
+            rb.velocity = new Vector2(0f, 0f);
+            Instantiate(deadFx, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+            gameObject.GetComponent<PlayerMovement>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            // 재시도, 끝내기 UI 추가해야함
         }
     }
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EagleMovement : MonoBehaviour
 {
-    public Transform eaglePos;
-    private Transform initPos;
     public float moveTime = 10.5f;
     private float tempTime = 0f;
     private bool switchDir = false;
@@ -27,11 +25,11 @@ public class EagleMovement : MonoBehaviour
 
         if(switchDir)
         {
-            eaglePos.position = new Vector2(eaglePos.position.x, eaglePos.position.y + 0.1f);
+            transform.position = new Vector2(transform.position.x, transform.position.y + 0.1f);
         }
         else
         {
-            eaglePos.position = new Vector2(eaglePos.position.x, eaglePos.position.y - 0.1f);
+            transform.position = new Vector2(transform.position.x, transform.position.y - 0.1f);
         }
     }
 }
