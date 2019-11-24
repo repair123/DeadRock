@@ -8,8 +8,6 @@ public class OpossumMovement : MonoBehaviour
     private float tempTime = 0f;
     private bool switchDir = false;
 
-    // EagleMovement.cs에서 y축 대신 x축으로 이동하는것.
-    // EagleMovement 스크립트를 보면 됨
     private void Start() {
         tempTime = moveTime;
     }

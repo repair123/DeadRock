@@ -86,8 +86,6 @@ public class PlayerControl : MonoBehaviour
         {
             // Add a vertical force to the player.
             m_Grounded = false;
-
-            // 플레이어가 오브젝트를 밟고 점프가능하게 만듦.
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0f);
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         }
