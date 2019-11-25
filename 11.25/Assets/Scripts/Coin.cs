@@ -8,8 +8,12 @@ public class Coin : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            GameManager.instance.GetScore();
-            Destroy(gameObject);
+            if(other is BoxCollider2D)
+            {
+                GameManager.instance.GetScore();
+                Destroy(gameObject);
+            }
+            
         }
     }
 }
