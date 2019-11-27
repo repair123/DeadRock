@@ -10,8 +10,13 @@
 
 ### __추가 및 개선, 변경된 기능__
   * Tilemap 시스템으로 변경
-  * Platform 이미지 변경
     * Rule Tile 적용
+  * Platform 이미지 변경
+    * Grass Land 플랫폼 추가
+      * Hover tile 추가
+    * Brick Land 플랫폼 추가
+    * 풀 장식 추가
+    * 백그라운드 플랫폼 추가
   * 배경화면 추가
     * 플레이어 이동기반 배경화면 수정
   * 카메라가 플레이어를 따르도록 변경
