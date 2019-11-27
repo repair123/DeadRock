@@ -1,7 +1,7 @@
 ﻿# __유니티 프로젝트 실행법__
-> Project Files 폴더를 다운로드 후<br/>
+> Project Files.zip을 압축해제 후<br/>
 > Resource 폴더 -> 최신 날짜 -> Assets.zip 압축해제 후<br/>
-> Assets 폴더를 Project Files폴더에 넣는다. (Assets 이름 유지!)<br/>
+> 압축해제된 Assets 폴더를 압축해제된 Project Files폴더에 넣는다. (Assets 이름 유지!)<br/>
 > 이후 Project Files/Assets/Scenes/씬이름.unity 실행
 
 ### __기능 추가 후 푸시 규칙__
