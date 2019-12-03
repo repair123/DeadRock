@@ -8,6 +8,11 @@
 
 ### __사용 엔진__: 유니티 + C#
 
+### __추가 및 개선, 해야할 기능__
+  * 튜토리얼 스테이지 추가
+  * pause키 볼륨 바인딩
+  * SFX 구하기 - 일단 구현해놓고 소스가 없음
+
 ### __추가 및 개선, 변경된 기능__
   * Tilemap 시스템으로 변경
     * Rule Tile 적용
@@ -64,4 +69,22 @@
     * 게임시작 버튼 추가
     * 종료버튼 추가
     * 각 버튼 이벤트에 트랜지션 효과 추가
+  * BGM 추가
+    * Stage1 BGM 추가
+    * Stage2 BGM 추가
+    * Stage3 BGM 추가
+    * Stage4 BGM 추가
+    * Stage5 BGM 추가
+    * Stage6 BGM 추가
+  *SFX 추가
+    * playerDeath SFX 추가
+    * playerJump  SFX 추가
+    * playerDash  SFX 추가
+    * playerHurt  SFX 추가
+    * playerLanding  SFX 추가
+    * playerCoutching  SFX 추가
+    * stageClear  SFX 추가
+    * enemyDeath  SFX 추가
 -----------------
+
+
