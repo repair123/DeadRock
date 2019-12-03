@@ -77,7 +77,6 @@
     * Stage4 BGM 추가
     * Stage5 BGM 추가
     * Stage6 BGM 추가
-  *SFX 추가
     * playerDeath SFX 추가
     * playerJump  SFX 추가
     * playerDash  SFX 추가
